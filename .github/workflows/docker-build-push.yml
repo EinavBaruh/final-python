@@ -28,4 +28,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: einaybr/final-python:latest
+          tags: einavbr/final-python:latest
