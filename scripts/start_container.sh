@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-docker pull einaybr/final-python:latest
+docker pull einavbr/final-python:latest
 
 docker stop final-python-container || true
 docker rm final-python-container || true
