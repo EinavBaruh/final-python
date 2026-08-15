@@ -1,11 +1,9 @@
 name: Docker Build and Push
-
 on:
   push:
     branches:
       - main
   workflow_dispatch:
-
 jobs:
   docker:
     runs-on: ubuntu-latest
@@ -22,10 +20,10 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-
       - name: Build and push Docker image
         uses: docker/build-push-action@v7
         with:
           context: .
           push: true
           tags: einavbr/final-python:latest
+          
